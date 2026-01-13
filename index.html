@@ -3,51 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>UI/UX Portfolio | Your Name</title>
+  <title>Mohit Bhati | UI/UX Designer</title>
 
   <style>
+    /* --- General Reset --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f9f9f9;
-      color: #222;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #f4f6f8;
+      color: #1a1a1a;
       line-height: 1.6;
     }
 
-    header {
-      background: #111;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
+    a { color: #0077b6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
+    section { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
 
-    header p {
-      font-size: 18px;
-      opacity: 0.9;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
+    h2 { font-size: 28px; margin-bottom: 20px; color: #222; }
 
     .card {
       background: #fff;
+      border-radius: 12px;
       padding: 25px;
-      border-radius: 8px;
       margin-bottom: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.1);
     }
 
     .meta {
@@ -56,25 +42,64 @@
       margin-bottom: 10px;
     }
 
-    ul {
-      padding-left: 20px;
+    /* --- Hero Section --- */
+    header {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px 60px 20px;
     }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* --- Skills Badges --- */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill {
+      background: #e0f7fa;
+      color: #0077b6;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* --- Project Cards --- */
+    .projects .card {
+      transition: all 0.3s ease;
+    }
+
+    /* --- Contact Section --- */
+    .contact p { margin-bottom: 10px; }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 30px 20px;
       font-size: 14px;
-      color: #666;
+      color: #888;
+      background: #e9ecef;
+      margin-top: 50px;
     }
 
-    .note {
-      font-size: 14px;
-      color: #555;
-      background: #f1f1f1;
-      padding: 10px;
-      border-radius: 6px;
-      margin-bottom: 20px;
+    /* --- Responsive --- */
+    @media(max-width: 768px){
+      header h1 { font-size: 32px; }
+      h2 { font-size: 24px; }
     }
+
   </style>
 </head>
 
@@ -82,8 +107,8 @@
 
   <!-- HERO -->
   <header>
-    <h1>Your Name</h1>
-    <p>UI/UX Designer | PwC</p>
+    <h1>Mohit Bhati</h1>
+    <p>UI/UX Designer at PwC • Enterprise & Web Applications</p>
   </header>
 
   <!-- ABOUT -->
@@ -91,105 +116,120 @@
     <h2>About Me</h2>
     <div class="card">
       <p>
-        I am a UI/UX Designer working at PwC, with experience designing enterprise and
-        customer-facing digital products. I focus on solving complex problems through
-        user-centered design, collaboration, and structured design processes.
+        UI/UX Designer with 6+ years of experience designing intuitive, user-centric web and enterprise applications. Skilled in UX research, user flows, information architecture, wireframing, visual UI design, and collaborating with cross-functional teams to deliver impactful digital experiences.
       </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Key Skills</h2>
+    <div class="card">
+      <div class="skills">
+        <span class="skill">UI Design</span>
+        <span class="skill">Personas & Journey Mapping</span>
+        <span class="skill">Requirement Analysis</span>
+        <span class="skill">Information Architecture</span>
+        <span class="skill">Dashboard & Data Visualization</span>
+        <span class="skill">Typography & Color Systems</span>
+        <span class="skill">Micro-interactions</span>
+        <span class="skill">Agile / Scrum Collaboration</span>
+      </div>
+      <p style="margin-top:15px;"><strong>Tools:</strong> Figma, Adobe Photoshop, Illustrator, Prototyping (Low & High Fidelity), Design Handoff</p>
+      <p><strong>Domain Expertise:</strong> Payroll & HRMS, Compliance UX, Role-Based Access & Approval Workflows, Data Accuracy & Error-Free UI</p>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section>
-    <h2>Experience</h2>
+    <h2>Work Experience</h2>
+
     <div class="card">
-      <h3>UI/UX Designer — PwC</h3>
-      <div class="meta">202X – Present</div>
-      <p>
-        Working on multiple enterprise and digital transformation projects across
-        different industries.
-      </p>
+      <h3>UI/UX Designer — PwC India (via Netconnect Global)</h3>
+      <div class="meta">Jun 2022 – Present</div>
+      <ul>
+        <li>Designed intuitive UI for web applications, enhancing user engagement.</li>
+        <li>Created visually compelling designs supporting brand identity and marketing.</li>
+        <li>Applied UX principles for usability and accessibility optimization.</li>
+        <li>Collaborated with cross-functional teams to deliver seamless digital solutions.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Web Designer — Aurous Consultancy</h3>
+      <div class="meta">May 2019 – May 2022</div>
+      <ul>
+        <li>Designed responsive web layouts, increasing engagement by 25%.</li>
+        <li>Delivered 30+ client projects on time with consistent branding.</li>
+        <li>Optimized websites, reducing load times by 20% and improving UX & SEO.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- CASE STUDIES -->
-  <section>
-    <h2>Case Studies</h2>
-
-    <div class="note">
-      Due to NDA and client confidentiality, detailed screens and visuals cannot be shared.
-      The following case studies focus on design process, responsibilities, and outcomes.
+  <!-- PROJECTS -->
+  <section class="projects">
+    <h2>Projects & Case Studies</h2>
+    <div class="note card">
+      Due to NDA, project details are summarized. Focus is on process, responsibilities, and outcomes.
     </div>
 
-    <!-- CASE STUDY 1 -->
     <div class="card">
-      <h3>Enterprise Workflow Platform</h3>
-      <div class="meta">Client Confidential | PwC | Web Platform</div>
-
-      <p><strong>Problem:</strong><br/>
-        Users faced difficulty navigating complex workflows, leading to inefficiency and
-        increased task completion time.
-      </p>
-
-      <p><strong>My Role:</strong></p>
+      <h3>Nomination Portal</h3>
+      <div class="meta">Duration: 9 Months</div>
       <ul>
-        <li>UX research & requirement analysis</li>
-        <li>User flow and wireframe creation</li>
-        <li>High-fidelity UI design</li>
-        <li>Collaboration with developers and stakeholders</li>
+        <li>Led development, improving engagement by 30% through streamlined workflows.</li>
+        <li>Optimized portal features, reducing processing time by 25%.</li>
+        <li>Collaborated for system integration, boosting efficiency by 20%.</li>
       </ul>
-
-      <p><strong>Outcome:</strong><br/>
-        Improved usability, better stakeholder feedback, and smoother workflows.
-      </p>
     </div>
 
-    <!-- CASE STUDY 2 -->
     <div class="card">
-      <h3>Internal Management Tool Redesign</h3>
-      <div class="meta">Client Confidential | PwC | Internal Tool</div>
-
-      <p><strong>Problem:</strong><br/>
-        The existing system was outdated and difficult to use, causing friction for internal users.
-      </p>
-
-      <p><strong>My Role:</strong></p>
+      <h3>Payroll Application (Intga)</h3>
+      <div class="meta">Duration: 6 Months</div>
       <ul>
-        <li>UX audit of existing platform</li>
-        <li>Redesign of user journeys</li>
-        <li>Design system alignment</li>
-        <li>Design handoff to engineering</li>
+        <li>Designed wireframes, UI screens, and user flows.</li>
+        <li>Conducted user research & requirement analysis for payroll workflows.</li>
+        <li>Delivered compliant, intuitive interfaces for HR & payroll operations.</li>
       </ul>
-
-      <p><strong>Outcome:</strong><br/>
-        Simplified navigation and improved user satisfaction.
-      </p>
     </div>
 
+    <div class="card">
+      <h3>Tr Letter (Payroll Module)</h3>
+      <div class="meta">Duration: 8 Months</div>
+      <ul>
+        <li>End-to-end UI/UX design focusing on usability, accuracy, and compliance.</li>
+        <li>Created wireframes and user flows for payroll modules.</li>
+        <li>Developed high-fidelity UI screens for HR, finance, and employees.</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- PERSONAL PROJECT -->
+  <!-- EDUCATION -->
   <section>
-    <h2>Personal Project</h2>
+    <h2>Education</h2>
     <div class="card">
-      <h3>Food Delivery App (Concept)</h3>
-      <p>
-        A self-initiated mobile app concept focusing on simplified ordering and order tracking.
-        This project demonstrates my visual design skills and end-to-end design thinking.
-      </p>
+      <ul>
+        <li>B.B.A/B.M.S, 2017 — Ch Charan Singh University (CCSU), Meerut</li>
+        <li>12th, 2014 — Uttar Pradesh, English</li>
+        <li>10th, 2010 — CBSE, English</li>
+      </ul>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section>
     <h2>Contact</h2>
-    <div class="card">
-      <p>Email: yourname@email.com</p>
-      <p>LinkedIn: linkedin.com/in/yourname</p>
+    <div class="card contact">
+      <p>Email: <a href="mailto:mohitb019@gmail.com">mohitb019@gmail.com</a></p>
+      <p>Phone: (+91) 9990455347</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mohit-bhati-6b3456114/" target="_blank">Mohit Bhati</a></p>
+      <p>City: Greater Noida, India</p>
+      <p>Languages: English, Hindi</p>
     </div>
   </section>
 
   <footer>
-    © 2026 Your Name — UI/UX Portfolio
+    © 2026 Mohit Bhati — UI/UX Portfolio
   </footer>
 
 </body>
