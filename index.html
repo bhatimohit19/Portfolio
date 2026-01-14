@@ -14,7 +14,6 @@
   --light:#e4e4e4;
   --accent:#00b4d8;
 }
-
 *{margin:0;padding:0;box-sizing:border-box;}
 body{
   font-family:'Inter',sans-serif;
@@ -204,11 +203,6 @@ section{
   transform:translateY(-6px);
   box-shadow:0 15px 25px rgba(0,0,0,0.1);
 }
-.project img{
-  width:100%;
-  display:block;
-  border-bottom:1px solid var(--light);
-}
 .project-content{
   padding:28px;
 }
@@ -277,16 +271,14 @@ footer{
     <h1>Mohit Bhati</h1>
     <h2 id="typed-text">Senior UI/UX Designer</h2>
     <p>
-      UI/UX Designer with 6+ years of experience designing enterprise and consumer
-      applications. Strong focus on usability, dashboards, design systems, and
-      translating business requirements into clear, scalable user experiences.
+      Senior UI/UX Designer with 6+ years of experience delivering enterprise dashboards and web/mobile applications. Skilled in UX research, interaction design, and scalable design systems.
     </p>
     <div class="meta">
       Greater Noida, India · Open to Hybrid / Remote
     </div>
     <div class="actions">
-      <a href="Mohit_Bhati_CV.pdf" class="btn" target="_blank">Download CV</a>
-      <a href="#contact" class="btn outline">Contact</a>
+      <a href="mohit_resume_26.pdf" class="btn" target="_blank">Download Resume</a>
+      <a href="https://www.behance.net/mohitbhati1" class="btn outline" target="_blank">View Behance</a>
     </div>
   </div>
 </header>
@@ -294,9 +286,7 @@ footer{
 <section id="summary">
   <h3 class="section-title">Professional Summary</h3>
   <div class="card">
-    Senior UI/UX Designer experienced in working with cross-functional teams to design
-    enterprise platforms, dashboards, and internal tools. Known for simplifying complex
-    workflows, improving usability, and delivering consistent, scalable UI solutions.
+    Senior UI/UX Designer specializing in enterprise platforms, dashboards, and internal tools. Known for simplifying complex workflows, improving usability, and delivering consistent UI solutions.
   </div>
 </section>
 
@@ -333,56 +323,48 @@ footer{
       <h4>UI/UX Designer — PwC India</h4>
       <span>Jun 2022 – Present</span>
       <ul>
-        <li>Designed enterprise dashboards and internal applications for large-scale clients</li>
-        <li>Improved usability and task efficiency across complex workflows</li>
-        <li>Collaborated with product managers and developers in Agile teams</li>
+        <li>Designed enterprise dashboards and internal apps</li>
+        <li>Improved usability across complex workflows</li>
+        <li>Collaborated with PMs and developers in Agile teams</li>
       </ul>
     </div>
-
     <div class="role">
       <h4>Web Designer — Aurous Consultancy</h4>
       <span>May 2019 – May 2022</span>
       <ul>
-        <li>Designed and delivered 30+ responsive websites and web applications</li>
-        <li>Improved user engagement and conversion through UX improvements</li>
-        <li>Handled end-to-end design delivery from concept to handoff</li>
+        <li>Delivered 30+ responsive websites and apps</li>
+        <li>Improved user engagement via UX improvements</li>
+        <li>Handled end-to-end design from concept to handoff</li>
       </ul>
     </div>
   </div>
 </section>
 
 <section id="projects">
-  <h3 class="section-title">Selected Projects</h3>
+  <h3 class="section-title">Internal Projects</h3>
   <div class="projects">
     <div class="project">
-      <img src="https://via.placeholder.com/600x350?text=Nomination+Portal" alt="">
       <div class="project-content">
         <h4>Nomination Portal</h4>
-        <p>Enterprise nomination system designed to reduce manual effort and improve workflow clarity.</p>
+        <p>Enterprise workflow platform to reduce manual effort and improve clarity. Focused on reusable UI components and dashboards.</p>
       </div>
     </div>
-
     <div class="project">
-      <img src="https://via.placeholder.com/600x350?text=Payroll+Application" alt="">
       <div class="project-content">
         <h4>Payroll Application</h4>
-        <p>HR payroll platform focused on compliance, clarity, and ease of use.</p>
+        <p>HR payroll UI/UX design focusing on compliance, dashboards, and simplified workflows.</p>
       </div>
     </div>
-
     <div class="project">
-      <img src="https://via.placeholder.com/600x350?text=TR+Letter+Module" alt="">
       <div class="project-content">
-        <h4>TR Letter (Payroll Module)</h4>
-        <p>End-to-end UI/UX design for payroll modules with high usability and compliance.</p>
+        <h4>TR Letter Module</h4>
+        <p>End-to-end payroll module UX design improving task efficiency and compliance.</p>
       </div>
     </div>
-
     <div class="project">
-      <img src="https://via.placeholder.com/600x350?text=HR+Onboarding+Platform" alt="">
       <div class="project-content">
         <h4>HR Onboarding Platform</h4>
-        <p>Designed internal onboarding workflows to improve HR efficiency and employee experience.</p>
+        <p>Improved internal HR onboarding workflows for efficiency and employee experience.</p>
       </div>
     </div>
   </div>
@@ -394,6 +376,7 @@ footer{
     <p>Email: mohitb019@gmail.com</p>
     <p>Phone: +91 9990455347</p>
     <p>LinkedIn: linkedin.com/in/mohit-bhati</p>
+    <p>Behance: behance.net/mohitbhati1</p>
   </div>
 </section>
 
@@ -403,27 +386,23 @@ footer{
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
-// Typed Hero Text
 new Typed('#typed-text',{
   strings:["Senior UI/UX Designer","Crafting Intuitive Interfaces","Designing Experiences Users Love"],
   typeSpeed:50,
   backSpeed:30,
   loop:true
 });
-
-// Animate skill bars on scroll
 function animateSkills(){
   const skillSpans = document.querySelectorAll('.skill-bar span');
   const trigger = window.innerHeight * 0.85;
   skillSpans.forEach(span => {
     const top = span.getBoundingClientRect().top;
-    if(top < trigger){
-      span.style.width = span.getAttribute('data-width');
-    }
+    if(top < trigger){ span.style.width = span.getAttribute('data-width'); }
   });
 }
 window.addEventListener('scroll', animateSkills);
 window.addEventListener('load', animateSkills);
 </script>
+
 </body>
 </html>
