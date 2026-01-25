@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talent Onboarding Hub | Mohit Bhati</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6f8;
+  --white:#ffffff;
+  --black:#111111;
+  --gray:#666;
+  --light:#e5e7eb;
+  --accent:#00b4d8;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--black);line-height:1.7;}
+a{text-decoration:none;color:inherit;}
+
+/* NAV */
+nav{
+  position:fixed;
+  top:18px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#fff;
+  border:1px solid var(--light);
+  border-radius:40px;
+  padding:12px 28px;
+  display:flex;
+  gap:22px;
+  z-index:1000;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+nav a{font-size:14px;font-weight:600;color:#555;}
+nav a:hover{color:var(--accent);}
+
+/* HERO */
+header{min-height:60vh;display:flex;justify-content:center;align-items:center;text-align:center;padding:40px;}
+.hero h1{font-size:clamp(2.8rem,6vw,4rem);font-weight:800;letter-spacing:-0.04em;}
+.hero h2{margin-top:12px;font-size:1.3rem;font-weight:600;color:#444;}
+.hero p{margin:20px auto 0;max-width:760px;color:#666;}
+.btn{
+  padding:12px 30px;
+  border-radius:30px;
+  border:1px solid #111;
+  background:#111;
+  color:#fff;
+  font-weight:600;
+  transition:.3s;
+}
+.btn:hover{background:var(--accent);border-color:var(--accent);}
+.btn.outline{background:#fff;color:#111;margin-left:14px;}
+.btn.outline:hover{background:var(--accent);color:#fff;}
+
+/* SECTIONS */
+section{max-width:1150px;margin:100px auto;padding:0 28px;}
+.section-title{text-align:center;font-size:2.4rem;font-weight:800;margin-bottom:50px;}
+.card{background:#fff;border:1px solid var(--light);border-radius:18px;padding:36px;}
+.grid{display:grid;gap:32px;}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+.block{background:#fff;border-radius:18px;padding:28px;border:1px solid var(--light);transition:.3s;}
+.block:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.08);}
+.block h4{font-size:1.25rem;margin-bottom:10px;}
+.block p{font-size:14px;color:#666;}
+.placeholder{margin-top:14px;padding:30px;border-radius:12px;background:#f1f3f5;text-align:center;color:#999;font-size:14px;}
+.toc{position:sticky;top:120px;background:#fff;padding:20px;border-radius:12px;border:1px solid var(--light);}
+.toc a{display:block;margin-bottom:10px;color:#0057ff;font-weight:600;}
+.toc a:hover{text-decoration:underline;}
+footer{text-align:center;padding:60px 20px;font-size:14px;color:#888;}
+.case-link{display:inline-block;margin-top:12px;font-size:14px;font-weight:600;color:#0057ff;}
+.case-link:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">← Home</a>
+  <a href="#summary">Summary</a>
+  <a href="#research">Research</a>
+  <a href="#uxflow">UX Flow</a>
+  <a href="#ui-design">UI Design</a>
+  <a href="#metrics">Metrics</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <div class="hero">
+    <h1>Talent Onboarding Hub (TOH)</h1>
+    <h2>Gamified Onboarding Platform for PwC India</h2>
+    <p>
+      TOH engages new joiners with interactive quizzes, challenges, badges,
+      and dashboards. Designed to increase knowledge retention, compliance adherence,
+      and excitement during the first 90 days of joining.
+    </p>
+    <div class="actions">
+      <a href="index.html" class="btn outline">Back to Portfolio</a>
+    </div>
+  </div>
+</header>
+
+<section id="summary">
+  <h3 class="section-title">Project Summary</h3>
+  <div class="card">
+    <p><strong>Role:</strong> Senior UI/UX Designer</p>
+    <p><strong>Duration:</strong> 3 Months</p>
+    <p><strong>Tools:</strong> Figma, Adobe XD, Miro, Google Analytics</p>
+    <p>
+      TOH is an internal gamified onboarding platform designed for new joiners at PwC India.
+      The system combines learning, engagement, and compliance tracking in a seamless experience.
+    </p>
+  </div>
+</section>
+
+<section id="research">
+  <h3 class="section-title">Research & Insights</h3>
+  <div class="grid grid-2">
+
+    <div class="block">
+      <h4>Stakeholder Interviews</h4>
+      <p>Met with HR managers, team leads, and compliance officers to understand onboarding gaps.</p>
+      <div class="placeholder">Interview Notes & Key Insights Placeholder</div>
+    </div>
+
+    <div class="block">
+      <h4>User Research</h4>
+      <p>Surveyed 50+ new joiners to learn about their onboarding challenges and preferences.</p>
+      <div class="placeholder">User Survey & Pain Points Placeholder</div>
+    </div>
+
+    <div class="block">
+      <h4>Personas & Journeys</h4>
+      <p>Created personas for different joiner types and mapped onboarding journeys.</p>
+      <div class="placeholder">Persona & Journey Map Placeholder</div>
+    </div>
+
+    <div class="block">
+      <h4>Competitive Analysis</h4>
+      <p>Reviewed gamified onboarding tools and e-learning platforms to define engagement strategies.</p>
+      <div class="placeholder">Competitor Matrix Placeholder</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="uxflow">
+  <h3 class="section-title">UX Flow & Wireframes</h3>
+  <div class="grid grid-2">
+
+    <div class="block">
+      <h4>User Flow</h4>
+      <p>Mapped quiz progression, badge unlocks, and dashboard updates for seamless onboarding.</p>
+      <div class="placeholder">Flow Diagram Placeholder</div>
+    </div>
+
+    <div class="block">
+      <h4>Wireframes</h4>
+      <p>Low-fidelity screens for quizzes, progress tracking, leaderboard, and onboarding dashboard.</p>
+      <div class="placeholder">Wireframe Screens Placeholder</div>
+    </div>
+
+    <div class="block">
+      <h4>Prototype</h4>
+      <p>Interactive clickable prototype validated with 10 new joiners to test engagement and clarity.</p>
+      <div class="placeholder">Clickable Prototype Placeholder</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="ui-design">
+  <h3 class="section-title">UI Design & Gamification</h3>
+  <div class="grid grid-2">
+
+    <div class="block">
+      <h4>Visual Design</h4>
+      <p>High-fidelity screens using PwC branding, colors, and typography.</p>
+      <div class="placeholder">Dashboard & Quiz UI Placeholder</div>
+    </div>
+
+    <div class="block">
+      <h4>Gamification Elements</h4>
+      <p>Badges, progress bars, leaderboards, points, and achievement animations.</p>
+      <div class="placeholder">Badges & Gamification Placeholder</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="metrics">
+  <h3 class="section-title">UX Metrics & Impact</h3>
+  <div class="grid grid-2">
+
+    <div class="block">
+      <h4>Engagement Metrics</h4>
+      <p>Estimated quiz completion: 85% of new joiners; average engagement time: 35 mins/week.</p>
+      <div class="placeholder">Bar Chart Placeholder</div>
+    </div>
+
+    <div class="block">
+      <h4>Knowledge Retention</h4>
+      <p>Post-onboarding quiz scores improved by ~40% compared to previous onboarding methods.</p>
+      <div class="placeholder">Line Chart Placeholder</div>
+    </div>
+
+    <div class="block">
+      <h4>Compliance Adherence</h4>
+      <p>Tracked completion of statutory and mandatory training modules; compliance adherence improved to 95%.</p>
+      <div class="placeholder">Compliance Dashboard Placeholder</div>
+    </div>
+
+    <div class="block">
+      <h4>User Feedback</h4>
+      <p>New joiners reported higher satisfaction and better understanding of company policies.</p>
+      <div class="placeholder">Feedback & Survey Placeholder</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h3 class="section-title">Contact</h3>
+  <div class="card" style="text-align:center;">
+    <p>Email: mohitb019@gmail.com</p>
+    <p>Phone: +91 9990455347</p>
+    <p>LinkedIn: linkedin.com/in/mohit-bhati</p>
+    <p>Behance: behance.net/mohitbhati1</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Mohit Bhati — Senior UI/UX Designer
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bulk Mail Application Case Study | Mohit Bhati</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f5f7fa;
+  --white:#ffffff;
+  --black:#111;
+  --gray:#555;
+  --light:#e5e7eb;
+  --accent:#ff5722;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--black);
+  line-height:1.8;
+}
+
+/* ===== HEADER ===== */
+.case-header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid var(--light);
+  padding:16px 28px;
+  z-index:1000;
+}
+.back-link{
+  font-size:14px;
+  font-weight:600;
+  color:var(--accent);
+}
+.back-link:hover{text-decoration:underline}
+
+/* ===== LAYOUT ===== */
+.container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:60px;
+  padding:80px 28px;
+}
+
+/* ===== TOC ===== */
+.toc{
+  position:sticky;
+  top:90px;
+}
+.toc h4{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:#777;
+  margin-bottom:14px;
+}
+.toc a{
+  display:block;
+  font-size:14px;
+  margin-bottom:12px;
+  color:#555;
+}
+.toc a:hover{color:var(--accent)}
+
+/* ===== CONTENT ===== */
+section{margin-bottom:100px}
+
+h1{
+  font-size:3.2rem;
+  font-weight:800;
+  letter-spacing:-.04em;
+}
+h2{
+  font-size:2rem;
+  margin-bottom:18px;
+}
+h3{
+  font-size:1.4rem;
+  margin:36px 0 12px;
+}
+
+p{
+  font-size:16px;
+  color:#444;
+}
+
+ul{margin-left:18px}
+li{margin-bottom:10px}
+
+.badges{
+  margin:24px 0;
+}
+.badge{
+  display:inline-block;
+  padding:6px 14px;
+  font-size:12px;
+  border-radius:20px;
+  background:#ffece0;
+  margin-right:8px;
+}
+
+/* ===== METRICS ===== */
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:24px;
+  margin-top:30px;
+}
+.metric{
+  background:#fff;
+  border:1px solid var(--light);
+  border-radius:16px;
+  padding:24px;
+}
+.metric h4{
+  font-size:2rem;
+  color:var(--accent);
+}
+.metric p{font-size:14px}
+
+/* ===== PLACEHOLDER ===== */
+.placeholder{
+  margin-top:24px;
+  padding:60px;
+  background:#eef1f6;
+  border-radius:14px;
+  text-align:center;
+  color:#888;
+  font-size:14px;
+}
+
+/* ===== FOOTER ===== */
+.case-footer{
+  text-align:center;
+  padding:60px 24px 80px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACK TO PORTFOLIO -->
+<header class="case-header">
+  <a href="index.html" class="back-link">← Back to Portfolio</a>
+</header>
+
+<div class="container">
+
+  <!-- TOC -->
+  <aside class="toc">
+    <h4>Case Study</h4>
+    <a href="#overview">Overview</a>
+    <a href="#problem">Problem</a>
+    <a href="#context">Business Context</a>
+    <a href="#role">My Role</a>
+    <a href="#research">Research</a>
+    <a href="#strategy">UX Strategy</a>
+    <a href="#design">Design Execution</a>
+    <a href="#metrics">Impact & Metrics</a>
+    <a href="#learnings">Key Learnings</a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+      <h1>Bulk Mail Application</h1>
+      <p>
+        Bulk Mail Application is an internal PwC platform for efficiently sending
+        announcements, newsletters, and notifications to employees and partners.
+      </p>
+
+      <div class="badges">
+        <span class="badge">Workflow UX</span>
+        <span class="badge">Notifications</span>
+        <span class="badge">Enterprise Tool</span>
+        <span class="badge">Email Management</span>
+      </div>
+
+      <p>
+        The goal was to streamline message creation, scheduling, and delivery
+        while providing visibility into engagement and errors.
+      </p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="problem">
+      <h2>Problem Statement</h2>
+      <ul>
+        <li>Manual and error-prone mail dispatch process</li>
+        <li>High cognitive load for admins managing multiple audiences</li>
+        <li>Lack of visibility on mail delivery and engagement</li>
+        <li>Limited analytics and reporting capabilities</li>
+      </ul>
+    </section>
+
+    <!-- CONTEXT -->
+    <section id="context">
+      <h2>Business Context</h2>
+      <p>
+        In a global consulting firm, clear and timely communication is crucial.
+        Bulk mail errors can lead to compliance issues, missed deadlines, and
+        confusion among employees.
+      </p>
+
+      <ul>
+        <li>HR announcements and policy updates</li>
+        <li>Internal campaigns and newsletters</li>
+        <li>Tracking engagement and delivery performance</li>
+        <li>Minimizing errors while scaling communication</li>
+      </ul>
+    </section>
+
+    <!-- ROLE -->
+    <section id="role">
+      <h2>My Role</h2>
+      <p>
+        As <strong>Senior UI/UX Designer</strong>, I focused on simplifying
+        complex bulk mail workflows for internal stakeholders.
+      </p>
+
+      <ul>
+        <li>User journey mapping and workflow simplification</li>
+        <li>Information architecture for mail templates</li>
+        <li>UI design of scheduling, preview, and analytics screens</li>
+        <li>Validation and error prevention patterns</li>
+        <li>Iterative feedback sessions with HR and IT admins</li>
+      </ul>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research & Discovery</h2>
+      <ul>
+        <li>Interviews with HR and admin teams</li>
+        <li>Audit of existing mail processes</li>
+        <li>Competitor analysis of internal communication tools</li>
+        <li>Analytics review to identify key pain points</li>
+      </ul>
+
+      <div class="placeholder">
+        Personas · Workflow Maps · Error Patterns · Admin Needs
+      </div>
+    </section>
+
+    <!-- STRATEGY -->
+    <section id="strategy">
+      <h2>UX Strategy</h2>
+      <ul>
+        <li>Step-based workflow for mail creation</li>
+        <li>Live preview before scheduling</li>
+        <li>Inline error handling and notifications</li>
+        <li>Analytics dashboard for engagement tracking</li>
+      </ul>
+    </section>
+
+    <!-- DESIGN -->
+    <section id="design">
+      <h2>Design Execution</h2>
+      <ul>
+        <li>Template management and reusable components</li>
+        <li>Recipient segmentation and filtering UI</li>
+        <li>Scheduling, confirmation, and error notifications</li>
+        <li>Analytics dashboard with charts and delivery stats</li>
+      </ul>
+
+      <div class="placeholder">
+        Bulk Mail Screens · Analytics Charts · Template Flow
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section id="metrics">
+      <h2>Impact & UX Metrics (Estimated)</h2>
+
+      <div class="metrics">
+        <div class="metric">
+          <h4>↓ 40%</h4>
+          <p>Manual errors in mail dispatch</p>
+        </div>
+        <div class="metric">
+          <h4>↑ 60%</h4>
+          <p>Admin efficiency in sending emails</p>
+        </div>
+        <div class="metric">
+          <h4>↑ Engagement</h4>
+          <p>Email open and read rates</p>
+        </div>
+        <div class="metric">
+          <h4>↑ Visibility</h4>
+          <p>Tracking and analytics adoption</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNINGS -->
+    <section id="learnings">
+      <h2>Key Learnings</h2>
+      <ul>
+        <li>Step-based workflows reduce admin errors</li>
+        <li>Clear previews and confirmations improve confidence</li>
+        <li>Analytics dashboards drive adoption and visibility</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="case-footer">
+  <a href="index.html" class="back-link">← Back to Portfolio</a>
+</footer>
+
+</body>
+</html>

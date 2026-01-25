@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partner BGV Case Study | Mohit Bhati</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f5f7fa;
+  --white:#ffffff;
+  --black:#111;
+  --gray:#555;
+  --light:#e5e7eb;
+  --accent:#0057ff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--black);
+  line-height:1.8;
+}
+
+/* ===== HEADER ===== */
+.case-header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid var(--light);
+  padding:16px 28px;
+  z-index:1000;
+}
+.back-link{
+  font-size:14px;
+  font-weight:600;
+  color:var(--accent);
+}
+.back-link:hover{text-decoration:underline}
+
+/* ===== LAYOUT ===== */
+.container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:60px;
+  padding:80px 28px;
+}
+
+/* ===== TOC ===== */
+.toc{
+  position:sticky;
+  top:90px;
+}
+.toc h4{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:#777;
+  margin-bottom:14px;
+}
+.toc a{
+  display:block;
+  font-size:14px;
+  margin-bottom:12px;
+  color:#555;
+}
+.toc a:hover{color:var(--accent)}
+
+/* ===== CONTENT ===== */
+section{margin-bottom:100px}
+
+h1{
+  font-size:3.2rem;
+  font-weight:800;
+  letter-spacing:-.04em;
+}
+h2{
+  font-size:2rem;
+  margin-bottom:18px;
+}
+h3{
+  font-size:1.4rem;
+  margin:36px 0 12px;
+}
+
+p{
+  font-size:16px;
+  color:#444;
+}
+
+ul{margin-left:18px}
+li{margin-bottom:10px}
+
+.badges{
+  margin:24px 0;
+}
+.badge{
+  display:inline-block;
+  padding:6px 14px;
+  font-size:12px;
+  border-radius:20px;
+  background:#eef2ff;
+  margin-right:8px;
+}
+
+/* ===== METRICS ===== */
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:24px;
+  margin-top:30px;
+}
+.metric{
+  background:#fff;
+  border:1px solid var(--light);
+  border-radius:16px;
+  padding:24px;
+}
+.metric h4{
+  font-size:2rem;
+  color:var(--accent);
+}
+.metric p{font-size:14px}
+
+/* ===== PLACEHOLDER ===== */
+.placeholder{
+  margin-top:24px;
+  padding:60px;
+  background:#eef1f6;
+  border-radius:14px;
+  text-align:center;
+  color:#888;
+  font-size:14px;
+}
+
+/* ===== FOOTER ===== */
+.case-footer{
+  text-align:center;
+  padding:60px 24px 80px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACK TO PORTFOLIO -->
+<header class="case-header">
+  <a href="index.html" class="back-link">← Back to Portfolio</a>
+</header>
+
+<div class="container">
+
+  <!-- TOC -->
+  <aside class="toc">
+    <h4>Case Study</h4>
+    <a href="#overview">Overview</a>
+    <a href="#problem">Problem</a>
+    <a href="#context">Security Context</a>
+    <a href="#role">My Role</a>
+    <a href="#research">Research</a>
+    <a href="#strategy">UX Strategy</a>
+    <a href="#design">Design Execution</a>
+    <a href="#metrics">Impact & Metrics</a>
+    <a href="#learnings">Key Learnings</a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+      <h1>Partner BGV Application</h1>
+      <p>
+        Partner Background Verification (BGV) Application is a secure,
+        compliance-driven platform designed to handle sensitive
+        partner onboarding and verification workflows at PwC India.
+      </p>
+
+      <div class="badges">
+        <span class="badge">Security UX</span>
+        <span class="badge">Compliance</span>
+        <span class="badge">Enterprise Platform</span>
+        <span class="badge">Risk Management</span>
+      </div>
+
+      <p>
+        The product required a balance between strict verification requirements
+        and a frictionless experience for senior stakeholders.
+      </p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="problem">
+      <h2>Problem Statement</h2>
+      <ul>
+        <li>Highly sensitive data with zero tolerance for errors</li>
+        <li>Complex multi-step verification flows</li>
+        <li>Manual follow-ups and status ambiguity</li>
+        <li>Low visibility into verification progress</li>
+      </ul>
+    </section>
+
+    <!-- CONTEXT -->
+    <section id="context">
+      <h2>Security & Compliance Context</h2>
+      <p>
+        Partner BGV operates under heightened compliance and audit requirements
+        due to the seniority and legal responsibilities of partners.
+      </p>
+
+      <ul>
+        <li>Identity verification and background checks</li>
+        <li>Document authenticity and validation</li>
+        <li>Audit trails and access controls</li>
+        <li>Data privacy and retention policies</li>
+      </ul>
+    </section>
+
+    <!-- ROLE -->
+    <section id="role">
+      <h2>My Role</h2>
+      <p>
+        I served as the <strong>Senior UI/UX Designer</strong>, responsible for
+        designing a secure yet usable experience.
+      </p>
+
+      <ul>
+        <li>User flow simplification</li>
+        <li>Designing secure form interactions</li>
+        <li>Status tracking and transparency</li>
+        <li>Stakeholder reviews and iteration</li>
+        <li>Design system alignment</li>
+      </ul>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research & Discovery</h2>
+      <ul>
+        <li>Workshops with compliance teams</li>
+        <li>Understanding audit and legal requirements</li>
+        <li>Review of existing BGV tools</li>
+        <li>Risk analysis across user touchpoints</li>
+      </ul>
+
+      <div class="placeholder">
+        Compliance Mapping · Risk Areas · User Anxiety Points
+      </div>
+    </section>
+
+    <!-- STRATEGY -->
+    <section id="strategy">
+      <h2>UX Strategy</h2>
+      <ul>
+        <li>Step-based guided workflows</li>
+        <li>Clear progress indicators</li>
+        <li>Inline validation and feedback</li>
+        <li>Minimal cognitive load per step</li>
+      </ul>
+    </section>
+
+    <!-- DESIGN -->
+    <section id="design">
+      <h2>Design Execution</h2>
+      <ul>
+        <li>Secure document upload flows</li>
+        <li>Status-driven dashboards</li>
+        <li>Audit-friendly layouts</li>
+        <li>Role-based access patterns</li>
+      </ul>
+
+      <div class="placeholder">
+        BGV Flow Screens · Document Upload · Status Dashboard
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section id="metrics">
+      <h2>Impact & UX Metrics (Estimated)</h2>
+
+      <div class="metrics">
+        <div class="metric">
+          <h4>↓ 35%</h4>
+          <p>Manual follow-ups</p>
+        </div>
+        <div class="metric">
+          <h4>↑ 40%</h4>
+          <p>Completion clarity</p>
+        </div>
+        <div class="metric">
+          <h4>↓ Risk</h4>
+          <p>Compliance-related issues</p>
+        </div>
+        <div class="metric">
+          <h4>↑ Trust</h4>
+          <p>Partner confidence</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNINGS -->
+    <section id="learnings">
+      <h2>Key Learnings</h2>
+      <ul>
+        <li>Security UX must feel calm and controlled</li>
+        <li>Transparency reduces user anxiety</li>
+        <li>Compliance and usability can coexist</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<!-- NEXT CASE -->
+<footer class="case-footer">
+  <a href="bulk-mail.html" class="back-link">
+    Next Case Study: Bulk Mail Application →
+  </a>
+</footer>
+
+</body>
+</html>

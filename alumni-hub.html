@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alumni Hub Case Study | Mohit Bhati</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f5f7fa;
+  --white:#ffffff;
+  --black:#111;
+  --gray:#555;
+  --light:#e5e7eb;
+  --accent:#0057ff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--black);
+  line-height:1.8;
+}
+
+/* ===== HEADER ===== */
+.case-header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid var(--light);
+  padding:16px 28px;
+  z-index:1000;
+}
+.back-link{
+  font-size:14px;
+  font-weight:600;
+  color:var(--accent);
+}
+.back-link:hover{text-decoration:underline}
+
+/* ===== LAYOUT ===== */
+.container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:60px;
+  padding:80px 28px;
+}
+
+/* ===== TOC ===== */
+.toc{
+  position:sticky;
+  top:90px;
+}
+.toc h4{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:#777;
+  margin-bottom:14px;
+}
+.toc a{
+  display:block;
+  font-size:14px;
+  margin-bottom:12px;
+  color:#555;
+}
+.toc a:hover{color:var(--accent)}
+
+/* ===== CONTENT ===== */
+section{margin-bottom:100px}
+
+h1{
+  font-size:3.2rem;
+  font-weight:800;
+  letter-spacing:-.04em;
+}
+h2{
+  font-size:2rem;
+  margin-bottom:18px;
+}
+h3{
+  font-size:1.4rem;
+  margin:36px 0 12px;
+}
+
+p{
+  font-size:16px;
+  color:#444;
+}
+
+ul{margin-left:18px}
+li{margin-bottom:10px}
+
+.badges{
+  margin:24px 0;
+}
+.badge{
+  display:inline-block;
+  padding:6px 14px;
+  font-size:12px;
+  border-radius:20px;
+  background:#eef2ff;
+  margin-right:8px;
+}
+
+/* ===== METRICS ===== */
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:24px;
+  margin-top:30px;
+}
+.metric{
+  background:#fff;
+  border:1px solid var(--light);
+  border-radius:16px;
+  padding:24px;
+}
+.metric h4{
+  font-size:2rem;
+  color:var(--accent);
+}
+.metric p{font-size:14px}
+
+/* ===== PLACEHOLDER ===== */
+.placeholder{
+  margin-top:24px;
+  padding:60px;
+  background:#eef1f6;
+  border-radius:14px;
+  text-align:center;
+  color:#888;
+  font-size:14px;
+}
+
+/* ===== FOOTER ===== */
+.case-footer{
+  text-align:center;
+  padding:60px 24px 80px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACK TO PORTFOLIO -->
+<header class="case-header">
+  <a href="index.html" class="back-link">← Back to Portfolio</a>
+</header>
+
+<div class="container">
+
+  <!-- TOC -->
+  <aside class="toc">
+    <h4>Case Study</h4>
+    <a href="#overview">Overview</a>
+    <a href="#problem">Problem</a>
+    <a href="#context">Business Context</a>
+    <a href="#role">My Role</a>
+    <a href="#research">Research</a>
+    <a href="#strategy">UX Strategy</a>
+    <a href="#design">Design Execution</a>
+    <a href="#metrics">Impact & Metrics</a>
+    <a href="#learnings">Key Learnings</a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+      <h1>Alumni Hub</h1>
+      <p>
+        Alumni Hub is an engagement platform designed to maintain long-term
+        relationships between PwC India and its former employees.
+      </p>
+
+      <div class="badges">
+        <span class="badge">Engagement UX</span>
+        <span class="badge">Community Platform</span>
+        <span class="badge">Employer Branding</span>
+        <span class="badge">Internal Product</span>
+      </div>
+
+      <p>
+        The platform supports networking, rehiring opportunities,
+        knowledge sharing, and brand advocacy.
+      </p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="problem">
+      <h2>Problem Statement</h2>
+      <ul>
+        <li>No centralized alumni engagement channel</li>
+        <li>Disconnected communication via emails and events</li>
+        <li>Missed rehiring and referral opportunities</li>
+        <li>Low post-exit brand engagement</li>
+      </ul>
+    </section>
+
+    <!-- CONTEXT -->
+    <section id="context">
+      <h2>Business Context</h2>
+      <p>
+        For large consulting organizations like PwC, alumni represent
+        long-term brand ambassadors and potential future hires.
+      </p>
+
+      <ul>
+        <li>Employer branding and reputation</li>
+        <li>Talent pipeline and boomerang hiring</li>
+        <li>Community-driven engagement</li>
+        <li>Content governance and moderation</li>
+      </ul>
+    </section>
+
+    <!-- ROLE -->
+    <section id="role">
+      <h2>My Role</h2>
+      <p>
+        I worked as the <strong>Senior UI/UX Designer</strong> responsible for
+        shaping the alumni engagement experience.
+      </p>
+
+      <ul>
+        <li>Experience strategy and content structure</li>
+        <li>User journeys and interaction design</li>
+        <li>High-fidelity UI design</li>
+        <li>Usability validation</li>
+        <li>Design handoff and iteration</li>
+      </ul>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research & Discovery</h2>
+      <ul>
+        <li>Interviews with HR and alumni relations teams</li>
+        <li>Feedback from former employees</li>
+        <li>Benchmarking alumni platforms</li>
+        <li>Content consumption analysis</li>
+      </ul>
+
+      <div class="placeholder">
+        Personas · Engagement Patterns · Content Insights
+      </div>
+    </section>
+
+    <!-- STRATEGY -->
+    <section id="strategy">
+      <h2>UX Strategy</h2>
+      <ul>
+        <li>Content-first homepage</li>
+        <li>Clear value proposition for alumni</li>
+        <li>Simple onboarding and profile setup</li>
+        <li>Personalized content and opportunities</li>
+      </ul>
+    </section>
+
+    <!-- DESIGN -->
+    <section id="design">
+      <h2>Design Execution</h2>
+      <ul>
+        <li>Event-driven and story-based layouts</li>
+        <li>Job and referral discovery modules</li>
+        <li>Accessible and welcoming UI</li>
+        <li>Scalable component-based design</li>
+      </ul>
+
+      <div class="placeholder">
+        Alumni Hub Screens · Event Pages · Content Cards
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section id="metrics">
+      <h2>Impact & UX Metrics (Estimated)</h2>
+
+      <div class="metrics">
+        <div class="metric">
+          <h4>↑ 50%</h4>
+          <p>Alumni engagement rate</p>
+        </div>
+        <div class="metric">
+          <h4>↑ Rehires</h4>
+          <p>Improved boomerang hiring</p>
+        </div>
+        <div class="metric">
+          <h4>↑ Brand</h4>
+          <p>Employer brand perception</p>
+        </div>
+        <div class="metric">
+          <h4>↑ Participation</h4>
+          <p>Event & content interaction</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNINGS -->
+    <section id="learnings">
+      <h2>Key Learnings</h2>
+      <ul>
+        <li>Engagement platforms must deliver ongoing value</li>
+        <li>Community UX relies on trust and relevance</li>
+        <li>Strong content hierarchy drives retention</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<!-- NEXT CASE -->
+<footer class="case-footer">
+  <a href="partner-bgv.html" class="back-link">
+    Next Case Study: Partner BGV Application →
+  </a>
+</footer>
+
+</body>
+</html>
