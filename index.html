@@ -4,14 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mohit Bhati | Senior UI/UX Designer</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
 :root{
-  --bg:#f5f5f5;
+  --bg:#f4f6f8;
   --white:#ffffff;
   --black:#111111;
   --gray:#666;
-  --light:#e4e4e4;
+  --light:#e5e7eb;
   --accent:#00b4d8;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -26,7 +28,7 @@ a{text-decoration:none;color:inherit}
 /* NAV */
 nav{
   position:fixed;
-  top:20px;
+  top:18px;
   left:50%;
   transform:translateX(-50%);
   background:#fff;
@@ -36,6 +38,7 @@ nav{
   display:flex;
   gap:22px;
   z-index:1000;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
 nav a{
   font-size:14px;
@@ -53,24 +56,23 @@ header{
   padding:40px;
 }
 .hero h1{
-  font-size:clamp(2.8rem,6vw,4.2rem);
+  font-size:clamp(3rem,6vw,4.5rem);
   font-weight:800;
   letter-spacing:-0.04em;
 }
 .hero h2{
-  margin-top:10px;
+  margin-top:12px;
   font-size:1.4rem;
   font-weight:600;
   color:#444;
 }
 .hero p{
-  margin:22px auto 0;
-  max-width:720px;
+  margin:24px auto 0;
+  max-width:760px;
   color:#666;
-  font-size:1.05rem;
 }
 .hero .meta{
-  margin-top:26px;
+  margin-top:22px;
   font-size:14px;
   color:#777;
 }
@@ -78,15 +80,13 @@ header{
   margin-top:36px;
 }
 .btn{
-  display:inline-block;
-  padding:14px 32px;
+  padding:14px 34px;
   border-radius:30px;
-  border:1px solid var(--black);
-  font-weight:600;
-  font-size:14px;
+  border:1px solid #111;
   background:#111;
   color:#fff;
-  transition:0.3s;
+  font-weight:600;
+  transition:.3s;
 }
 .btn:hover{
   background:var(--accent);
@@ -96,133 +96,73 @@ header{
   background:#fff;
   color:#111;
   margin-left:14px;
-  border-color:#111;
 }
 .btn.outline:hover{
-  color:#fff;
   background:var(--accent);
-  border-color:var(--accent);
+  color:#fff;
 }
 
 /* SECTIONS */
 section{
-  max-width:1100px;
+  max-width:1150px;
   margin:120px auto;
   padding:0 28px;
 }
 .section-title{
-  font-size:2.4rem;
-  font-weight:800;
-  letter-spacing:-0.03em;
-  margin-bottom:60px;
   text-align:center;
+  font-size:2.6rem;
+  font-weight:800;
+  margin-bottom:60px;
 }
 
 /* CARD */
 .card{
   background:#fff;
-  border-radius:18px;
-  padding:40px;
-  border:1px solid var(--light);
-}
-
-/* SKILLS */
-.skills{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:26px;
-}
-.skill-group h4{
-  font-size:16px;
-  margin-bottom:10px;
-}
-.skill-bar{
-  width:100%;
-  height:10px;
-  background:var(--light);
-  border-radius:5px;
-  overflow:hidden;
-}
-.skill-bar span{
-  display:block;
-  height:100%;
-  width:0;
-  background:var(--accent);
-  border-radius:5px;
-  transition:width 1.2s ease;
-}
-.skill-group p{
-  font-size:14px;
-  color:#666;
-  margin-top:6px;
-}
-
-/* EXPERIENCE */
-.exp{
-  display:grid;
-  gap:34px;
-}
-.role{
-  background:#fff;
   border:1px solid var(--light);
   border-radius:18px;
-  padding:38px;
-}
-.role h4{
-  font-size:1.3rem;
-  font-weight:700;
-}
-.role span{
-  font-size:14px;
-  color:#777;
-}
-.role ul{
-  margin-top:16px;
-  padding-left:18px;
-}
-.role li{
-  font-size:14px;
-  color:#555;
-  margin-bottom:8px;
+  padding:36px;
 }
 
-/* PROJECTS */
-.projects{
+/* GRID */
+.grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:32px;
 }
-.project{
+.grid-3{
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+/* PROJECT / BLOCK */
+.block{
   background:#fff;
-  border:1px solid var(--light);
   border-radius:18px;
-  overflow:hidden;
-  transition:transform 0.3s,box-shadow 0.3s;
+  padding:32px;
+  border:1px solid var(--light);
+  transition:.3s;
 }
-.project:hover{
+.block:hover{
   transform:translateY(-6px);
-  box-shadow:0 15px 25px rgba(0,0,0,0.1);
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
 }
-.project-content{
-  padding:28px;
+.block h4{
+  font-size:1.3rem;
+  margin-bottom:10px;
 }
-.project h4{
-  font-size:1.2rem;
-  margin-bottom:8px;
-}
-.project p{
+.block p{
   font-size:14px;
   color:#666;
 }
+.block p strong{color:#111}
 
-/* CONTACT */
-.contact{
+/* PLACEHOLDER */
+.placeholder{
+  margin-top:14px;
+  padding:40px;
+  border-radius:12px;
+  background:#f1f3f5;
   text-align:center;
-}
-.contact p{
-  font-size:15px;
-  color:#555;
-  margin:8px 0;
+  color:#999;
+  font-size:14px;
 }
 
 /* FOOTER */
@@ -233,36 +173,28 @@ footer{
   color:#888;
 }
 
-/* SUBTLE GRAPHIC */
-.bg-wave{
-  position:fixed;
-  right:-200px;
-  top:18%;
-  width:700px;
-  opacity:.08;
-  z-index:-1;
+.case-link{
+  display:inline-block;
+  margin-top:12px;
+  font-size:14px;
+  font-weight:600;
+  color:#0057ff;
+}
+.case-link:hover{
+  text-decoration:underline;
 }
 
-/* PRINT */
-@media print{
-  nav,.actions,footer{display:none}
-  body{background:#fff}
-}
 </style>
 </head>
-<body>
 
-<!-- Subtle background graphic -->
-<svg class="bg-wave" viewBox="0 0 800 600">
-  <path d="M0 200 Q200 120 400 200 T800 200" fill="none" stroke="#000" stroke-width="1"/>
-  <path d="M0 260 Q200 180 400 260 T800 260" fill="none" stroke="#000" stroke-width="1"/>
-</svg>
+<body>
 
 <nav>
   <a href="#summary">Summary</a>
-  <a href="#skills">Skills</a>
+  <a href="#process">Process</a>
   <a href="#experience">Experience</a>
   <a href="#projects">Projects</a>
+  <a href="#artifacts">UX Artifacts</a>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -271,14 +203,16 @@ footer{
     <h1>Mohit Bhati</h1>
     <h2 id="typed-text">Senior UI/UX Designer</h2>
     <p>
-      Senior UI/UX Designer with 6+ years of experience delivering enterprise dashboards and web/mobile applications. Skilled in UX research, interaction design, and scalable design systems.
+      Senior UI/UX Designer with 6+ years of experience designing enterprise-grade
+      platforms, internal tools, and compliance-heavy systems for PwC India.
+      Specialized in simplifying complex workflows and delivering scalable design systems.
     </p>
     <div class="meta">
-      Greater Noida, India · Open to Hybrid / Remote
+      Greater Noida, India · PwC India (NetConnect Global Payroll)
     </div>
     <div class="actions">
       <a href="mohit_resume_26.pdf" class="btn" target="_blank">Download Resume</a>
-      <a href="https://www.behance.net/mohitbhati1" class="btn outline" target="_blank">View Behance</a>
+      <a href="https://www.behance.net/mohitbhati1" class="btn outline" target="_blank">Behance</a>
     </div>
   </div>
 </header>
@@ -286,93 +220,215 @@ footer{
 <section id="summary">
   <h3 class="section-title">Professional Summary</h3>
   <div class="card">
-    Senior UI/UX Designer specializing in enterprise platforms, dashboards, and internal tools. Known for simplifying complex workflows, improving usability, and delivering consistent UI solutions.
+    I design enterprise applications that balance business goals, compliance,
+    and user experience. At PwC India, I’ve led UX efforts for payroll systems,
+    background verification platforms, alumni engagement tools, and internal
+    communication products—driving clarity, efficiency, and adoption across teams.
   </div>
 </section>
 
-<section id="skills">
-  <h3 class="section-title">Core Skills</h3>
-  <div class="skills">
-    <div class="skill-group">
-      <h4>UX Design</h4>
-      <div class="skill-bar"><span data-width="90%"></span></div>
-      <p>User research, wireframes, usability testing</p>
+<section id="process">
+  <h3 class="section-title">UX Design Process</h3>
+  <div class="grid grid-3">
+
+    <div class="block">
+      <h4>Research & Discovery</h4>
+      <p>Stakeholder interviews, requirement gathering, audits, and desk research.</p>
+      <p><strong>Outputs:</strong> Interview notes, insights, problem statements</p>
     </div>
-    <div class="skill-group">
+
+    <div class="block">
+      <h4>User Analysis</h4>
+      <p>Persona creation and journey mapping for HR, Payroll, Partners, and Employees.</p>
+      <p><strong>Outputs:</strong> Personas, journey maps, empathy maps</p>
+    </div>
+
+    <div class="block">
+      <h4>Ideation & IA</h4>
+      <p>Information architecture, workflows, wireframes, and validation.</p>
+      <p><strong>Outputs:</strong> User flows, sitemaps, wireframes</p>
+    </div>
+
+    <div class="block">
       <h4>UI Design</h4>
-      <div class="skill-bar"><span data-width="85%"></span></div>
-      <p>Design systems, responsive UI, dashboards</p>
+      <p>High-fidelity UI, components, and PwC-aligned design systems.</p>
+      <p><strong>Outputs:</strong> UI screens, design systems</p>
     </div>
-    <div class="skill-group">
+
+    <div class="block">
       <h4>Prototyping</h4>
-      <div class="skill-bar"><span data-width="95%"></span></div>
-      <p>Figma, Adobe XD, Illustrator</p>
+      <p>Interactive prototypes for usability testing and stakeholder signoff.</p>
+      <p><strong>Outputs:</strong> Clickable prototypes</p>
     </div>
-    <div class="skill-group">
-      <h4>Collaboration</h4>
-      <div class="skill-bar"><span data-width="90%"></span></div>
-      <p>Agile/Scrum, stakeholder alignment</p>
+
+    <div class="block">
+      <h4>Testing & Iteration</h4>
+      <p>Usability testing, feedback loops, and continuous improvement.</p>
+      <p><strong>Outputs:</strong> Reports, refinements</p>
     </div>
+
   </div>
 </section>
 
 <section id="experience">
   <h3 class="section-title">Experience</h3>
-  <div class="exp">
-    <div class="role">
-      <h4>UI/UX Designer — PwC India</h4>
-      <span>Jun 2022 – Present</span>
-      <ul>
-        <li>Designed enterprise dashboards and internal apps</li>
-        <li>Improved usability across complex workflows</li>
-        <li>Collaborated with PMs and developers in Agile teams</li>
-      </ul>
+  <div class="grid">
+
+    <div class="block">
+      <h4>Senior UI/UX Designer — PwC India</h4>
+      <p><strong>2022 – Present</strong></p>
+      <p>
+        Leading UX design for internal enterprise applications including Payroll,
+        BGV systems, alumni platforms, and communication tools.
+      </p>
     </div>
-    <div class="role">
-      <h4>Web Designer — Aurous Consultancy</h4>
-      <span>May 2019 – May 2022</span>
-      <ul>
-        <li>Delivered 30+ responsive websites and apps</li>
-        <li>Improved user engagement via UX improvements</li>
-        <li>Handled end-to-end design from concept to handoff</li>
-      </ul>
+
+    <div class="block">
+      <h4>UI/UX Designer — Aurous Consultancy</h4>
+      <p><strong>2019 – 2022</strong></p>
+      <p>
+        Delivered multiple responsive websites and applications across domains,
+        handling UX, UI, and developer handoff.
+      </p>
     </div>
+
   </div>
 </section>
 
 <section id="projects">
-  <h3 class="section-title">Internal Projects</h3>
-  <div class="projects">
-    <div class="project">
-      <div class="project-content">
-        <h4>Nomination Portal</h4>
-        <p>Enterprise workflow platform to reduce manual effort and improve clarity. Focused on reusable UI components and dashboards.</p>
+  <h3 class="section-title">Key Projects</h3>
+
+  <div class="grid grid-3">
+
+    <!-- Nomination Portal -->
+    <div class="block">
+      <h4>Nomination Portal</h4>
+      <p>
+        Centralized enterprise platform managing employee nominations,
+        background verification (BGV), statutory declarations, and UAN submissions.
+      </p>
+      <p><strong>Domain:</strong> HR Tech · Compliance · Internal Tools</p>
+      <a href="nomination-portal.html" class="case-link">
+        View Full Case Study →
+      </a>
+    </div>
+
+    <!-- Payroll -->
+    <div class="block">
+      <h4>Payroll Platform</h4>
+      <p>
+        End-to-end payroll experience covering salary structures,
+        deductions, compliance, and reporting dashboards.
+      </p>
+      <p><strong>Domain:</strong> Finance · Payroll · Data-heavy UX</p>
+      <a href="payroll-platform.html" class="case-link">
+        View Full Case Study →
+      </a>
+    </div>
+
+    <!-- Alumni Hub -->
+    <div class="block">
+      <h4>Alumni Hub</h4>
+      <p>
+        Engagement platform built to maintain long-term relationships
+        with ex-employees and strengthen PwC employer branding.
+      </p>
+      <p><strong>Domain:</strong> Engagement · Employer Branding</p>
+      <a href="alumni-hub.html" class="case-link">
+        View Full Case Study →
+      </a>
+    </div>
+
+    <!-- Partner BGV -->
+    <div class="block">
+      <h4>Partner BGV Application</h4>
+      <p>
+        Secure background verification system designed specifically
+        for partners and senior stakeholders.
+      </p>
+      <p><strong>Domain:</strong> Security · Compliance · Audit</p>
+      <a href="partner-bgv.html" class="case-link">
+        View Full Case Study →
+      </a>
+    </div>
+
+    <!-- Bulk Mail -->
+    <div class="block">
+      <h4>Bulk Mail Application</h4>
+      <p>
+        Internal communication tool enabling secure bulk email
+        distribution with validation and tracking.
+      </p>
+      <p><strong>Domain:</strong> Internal Tools · Risk Reduction</p>
+      <a href="bulk-mail.html" class="case-link">
+        View Full Case Study →
+      </a>
+    </div>
+
+    <!-- Talent Onboarding Hub -->
+    <div class="block">
+      <h4>Talent Onboarding Hub (TOH)</h4>
+      <p>
+        Gamified onboarding platform engaging new joiners through quizzes,
+        challenges, badges, and interactive content for better learning and retention.
+      </p>
+      <p><strong>Domain:</strong> HR Tech · Engagement · Gamification</p>
+      <a href="talent-onboarding-hub.html" class="case-link">
+        View Full Case Study →
+      </a>
+    </div>
+
+  </div>
+</section>
+<section id="artifacts">
+  <h3 class="section-title">UX Artifacts (Samples)</h3>
+  <div class="grid grid-3">
+
+    <!-- Nomination Portal -->
+    <div class="block">
+      <h4>Nomination Portal</h4>
+      <div class="placeholder">User Flows & Dashboard Wireframes Placeholder</div>
+    </div>
+
+    <!-- Payroll -->
+    <div class="block">
+      <h4>Payroll Platform</h4>
+      <div class="placeholder">Salary Dashboards & Compliance Flow Placeholder</div>
+    </div>
+
+    <!-- Alumni Hub -->
+    <div class="block">
+      <h4>Alumni Hub</h4>
+      <div class="placeholder">Engagement Journeys & Notification Flows Placeholder</div>
+    </div>
+
+    <!-- Partner BGV -->
+    <div class="block">
+      <h4>Partner BGV Application</h4>
+      <div class="placeholder">Secure Verification Flows & Audit Screens Placeholder</div>
+    </div>
+
+    <!-- Bulk Mail -->
+    <div class="block">
+      <h4>Bulk Mail Application</h4>
+      <div class="placeholder">Email Workflow Screens & Validation Charts Placeholder</div>
+    </div>
+
+    <!-- Talent Onboarding Hub (TOH) -->
+    <div class="block">
+      <h4>Talent Onboarding Hub (TOH)</h4>
+      <div class="placeholder">
+        Gamified Quiz Flows, Badge System, Leaderboards & Onboarding Dashboard Placeholder
       </div>
     </div>
-    <div class="project">
-      <div class="project-content">
-        <h4>Payroll Application</h4>
-        <p>HR payroll UI/UX design focusing on compliance, dashboards, and simplified workflows.</p>
-      </div>
-    </div>
-    <div class="project">
-      <div class="project-content">
-        <h4>TR Letter Module</h4>
-        <p>End-to-end payroll module UX design improving task efficiency and compliance.</p>
-      </div>
-    </div>
-    <div class="project">
-      <div class="project-content">
-        <h4>HR Onboarding Platform</h4>
-        <p>Improved internal HR onboarding workflows for efficiency and employee experience.</p>
-      </div>
-    </div>
+
   </div>
 </section>
 
+
 <section id="contact">
   <h3 class="section-title">Contact</h3>
-  <div class="contact">
+  <div class="card" style="text-align:center">
     <p>Email: mohitb019@gmail.com</p>
     <p>Phone: +91 9990455347</p>
     <p>LinkedIn: linkedin.com/in/mohit-bhati</p>
@@ -381,27 +437,21 @@ footer{
 </section>
 
 <footer>
-  © 2026 Mohit Bhati — UI/UX Designer
+  © 2026 Mohit Bhati — Senior UI/UX Designer
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
 new Typed('#typed-text',{
-  strings:["Senior UI/UX Designer","Crafting Intuitive Interfaces","Designing Experiences Users Love"],
+  strings:[
+    "Senior UI/UX Designer",
+    "Designing Enterprise Experiences",
+    "Simplifying Complex Systems"
+  ],
   typeSpeed:50,
   backSpeed:30,
   loop:true
 });
-function animateSkills(){
-  const skillSpans = document.querySelectorAll('.skill-bar span');
-  const trigger = window.innerHeight * 0.85;
-  skillSpans.forEach(span => {
-    const top = span.getBoundingClientRect().top;
-    if(top < trigger){ span.style.width = span.getAttribute('data-width'); }
-  });
-}
-window.addEventListener('scroll', animateSkills);
-window.addEventListener('load', animateSkills);
 </script>
 
 </body>
